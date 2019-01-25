@@ -6,4 +6,9 @@ $(document).ready(() => {
   $('.show-button').on('click', () => {
     $('.first-image').show();
   });
+
+  $('.toggle-button').on('click', () => {
+    $('.first-image').toggle();
+  });
+
 });
