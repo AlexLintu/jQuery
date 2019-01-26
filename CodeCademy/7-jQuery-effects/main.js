@@ -15,4 +15,8 @@ $(document).ready(() => {
     $('.fade-image').fadeOut(500);
   });
 
+  $('.fade-in-button').on('click', () => {
+    $('.fade-image').fadeIn(4000);
+  });
+
 });
