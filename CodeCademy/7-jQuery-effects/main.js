@@ -19,4 +19,7 @@ $(document).ready(() => {
     $('.fade-image').fadeIn(4000);
   });
 
+  $('.fade-toggle-button').on('click', () => {
+    $('.fade-image').fadeToggle('fast')
+  });
 });
