@@ -20,6 +20,11 @@ $(document).ready(() => {
   });
 
   $('.fade-toggle-button').on('click', () => {
-    $('.fade-image').fadeToggle('fast')
+    $('.fade-image').fadeToggle();
   });
+
+  $('.up-button').on('click', () => {
+    $('.slide-image').slideUp(100);
+  });
+
 });
