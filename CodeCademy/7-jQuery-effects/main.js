@@ -30,4 +30,8 @@ $(document).ready(() => {
   $('.down-button').on('click', () => {
     $('.slide-image').slideDown('slow');
   });
+
+  $('.slide-toggle-button').on('click', () => {
+    $('.slide-image').slideToggle();
+  });
 });
