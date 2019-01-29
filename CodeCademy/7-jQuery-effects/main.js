@@ -27,4 +27,7 @@ $(document).ready(() => {
     $('.slide-image').slideUp(100);
   });
 
+  $('.down-button').on('click', () => {
+    $('.slide-image').slideDown('slow');
+  });
 });
