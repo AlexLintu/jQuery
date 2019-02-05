@@ -1,8 +1,7 @@
 $(document).ready(() => {
-  $('.login-button').on('____', () => {
+  $('.login-button').on('click', () => {
     $('.login-form').show();
   })
 
 
 });
-
