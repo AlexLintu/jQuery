@@ -11,9 +11,9 @@ $(document).ready(() => {
     $('.nav-menu').hide();
   })
   // Chaining events `mouseenter` and `mouseleave`
-  $('.product-photo').on('mouseenter', () => {
-    $('.product-photo').addClass('photo-active');
-  }).on('mouseleave', () => {
-    $('.product-photo').removeClass('photo-active');
+  $('.product-photo').on('mouseenter', (event) => {
+    $(event.currentTarget).addClass('photo-active');
+  }).on('mouseleave', (event) => {
+    $(event.currentTarget).removeClass('photo-active');
   });
 });
