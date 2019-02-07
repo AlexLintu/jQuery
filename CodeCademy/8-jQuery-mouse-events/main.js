@@ -36,5 +36,4 @@ $(document).ready(() => {
   }).on('mouseleave', event => {
     $(event.currentTarget).removeClass('photo-active')
   })
-
 });
