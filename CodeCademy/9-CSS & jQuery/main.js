@@ -6,13 +6,14 @@ $(document).ready(() => {
 
   $('.menu-button').on('mouseenter', () => {
     $('.nav-menu').show();
-    $('.menu-button').css({
-      color: '#C3FF00',
-      backgroundColor: '#535353'
-    });
-    $('.menu-button').animate({
-      fontSize: '24px'
-    }, 200);
+    // $('.menu-button').css({
+    //   color: '#C3FF00',
+    //   backgroundColor: '#535353'
+    // });
+    // $('.menu-button').animate({
+    //   fontSize: '24px'
+    // }, 200);
+    $('.menu-button').addClass('button-active');
   });
 
   $('.nav-menu').on('mouseleave', () => {
