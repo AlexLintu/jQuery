@@ -14,6 +14,7 @@ $(document).ready(() => {
     //   fontSize: '24px'
     // }, 200);
     $('.menu-button').addClass('button-active');
+    $('.nav-menu').removeClass('hide');
   });
 
   $('.nav-menu').on('mouseleave', () => {
