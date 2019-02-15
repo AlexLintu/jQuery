@@ -17,6 +17,18 @@ $(document).ready(() => {
     $('.nav-menu').removeClass('hide');
   });
 
+  $('.menu-button').on('click', () => {
+    $('.nav-menu').show();
+    $('.menu-button').addClass('button-active');
+    $('.nav-menu').removeClass('hide');
+  });
+
+  // .toggleClass()
+  $('.menu-button').on('click', () => {
+    $('.nav-menu').toggleClass('hide');
+    $('.menu-button').toggleClass('button-active');
+  })
+
   $('.nav-menu').on('mouseleave', () => {
     $('.nav-menu').hide();
     $('.menu-button').css({
