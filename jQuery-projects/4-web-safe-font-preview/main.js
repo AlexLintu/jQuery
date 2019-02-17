@@ -7,7 +7,12 @@ $(document).ready(() => {
       $('.preview').css({
         fontFamily: $(event.currentTarget).val()
       })
-    })
+    });
+    // Updating font-weight property within preview box
+    $('#weight').on('change', event => {
+      $('.preview').css({
+        fontWeight: $(event.currentTarget).val()
+      })
+    });
   });
-
 })
