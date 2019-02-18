@@ -11,7 +11,7 @@ $(document).ready(() => {
 
     $(event.currentTarget).siblings().removeClass('active')
 
-
+    $('.shoe-details').children().removeClass('disabled');
   });
 
 
