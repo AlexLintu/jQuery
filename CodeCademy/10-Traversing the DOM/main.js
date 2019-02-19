@@ -1,17 +1,19 @@
 $(document).ready(() => {
-
-  $('.shoe-details').show();
-
+  // The arrow that shows shoe sizes on click
   $('.more-details-button').on('click', event => {
-    $(event.currentTarget).closest('.product-details').next('.shoe-details').toggle();
+    $(event.currentTarget).closest('.product-details').next().toggle();
+    $(event.currentTarget).find('img').toggleClass('rotate');
   });
-
+  // Shoe sizes
   $('.shoe-details li').on('click', event => {
     $(event.currentTarget).addClass('active');
-    $(event.currentTarget).siblings().removeClass('active');
-    $(event.currentTarget).closest('.shoe-details').children().removeClass('disabled');
-  });
 
+    $(event.currentTarget).siblings().removeClass('active')
+
+    $(event.currentTarget).closest('.shoe-details').children().removeClass('disabled')
+
+
+  });
 
   ///////////////////////////////////////////
   $('.login-button').on('click', () => {
