@@ -8,13 +8,8 @@ $(document).ready(() => {
 
   $('.shoe-details li').on('click', event => {
     $(event.currentTarget).addClass('active');
-
-    $(event.currentTarget).siblings().removeClass('active')
-
-    $('.shoe-details').children().removeClass('disabled');
+    $(event.currentTarget).siblings().removeClass('active');
   });
-
-
 
   ///////////////////////////////////////////
   $('.login-button').on('click', () => {
